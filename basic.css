@@ -1,0 +1,190 @@
+/* 기본 마진,패딩삭제 */
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+/* 화면 확대시 요소 짤림 방지 */
+body {
+    min-width: 1780px;
+    min-height: 600px;  
+    }
+
+/* 링크 기본 색상 설정 */
+a {
+    color : black;
+}
+
+/* 좌측상단,하단 로고 조정 */
+nav > div {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 20px;
+    margin-left: -200px;
+    margin-right: 120px;
+}
+
+/* 좌측상단,하단 로고 설정 */
+nav > div > a > span {
+    white-space: nowrap;
+    font-family: league spartan;
+    font-size: 44px;
+    text-align: center;
+    display: block;       
+}
+
+/* 좌측상단 최하단,하단 최하단 문구 설정 */
+.animal {
+    font-size : 11px;
+    line-height: 2px;
+    font-family: quicksand;
+    letter-spacing: 7px; 
+}
+
+/* 링크 텍스트 효과 설정 [전부 없음] */
+.is a , nav div a, footer, .tape a{
+    text-decoration: none;
+    color : none;
+    display: inline-block;
+    padding: 12px;
+}
+
+/* 방문했던 링크 설정 */
+a:visited {
+    color : black;
+}
+
+/* 링크에 마우스 올렸을 시 그림자설정 */
+.is a:hover {
+    text-shadow: 0.4px 0.4px 0px gray;
+}
+
+/* 네비게이션 바 속성설정 */
+nav ul {
+display: flex;
+align-self: center;
+}
+
+/* 네비게이션 '메뉴바' 리스트 설정 */
+.no1 {
+    display: inline-block;
+    margin: 5.5px 40px;
+    font-size: 24px;
+    font-family: noto sans kr;
+    font-weight: 2px;
+}
+
+/* 화면 배율 조절해도 요소 움직이지 않게 */
+nav,main, footer {
+    white-space: nowrap;  
+    display: flex;
+    justify-content: center;
+}
+
+/* 우측 로그인바 설정 */
+.test {
+    font-size: 13px;
+    font-family: noto sans kr;
+    height: 50px;
+    width: 180px;
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    top: 0px; 
+    left : 150px;
+}
+
+/* 우측 로그인바 */
+.test a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* 우측 로그인바 그림자설정 */
+.test a:hover{
+    filter:drop-shadow( 0.5px 0.5px 0 gray);
+}
+
+/* 우측 로그인바 간격 */
+.test li {
+    margin: 5px;
+}
+
+/* 하단 부분 속성 설정 */
+footer{
+    white-space: nowrap; 
+    background-color: rgba(197, 196, 195, 0.986);
+    display: flex;
+    margin: 0 auto;
+    justify-content:space-between;
+    margin-top: 23px;
+} 
+/* 하단 좌측 각정 정보란 설정 */
+.info {
+    display: inline-block;
+    white-space: nowrap;  
+    margin-left: 170px;
+    font-family: noto sans kr;
+    font-weight: 250px;
+    font-size: 15px;
+}
+/* 하단 좌측 개인정보,저작권 설정 */
+.samda {
+    display: inline-flex;
+    position: relative;
+    top:20px;
+    margin-bottom: 35px;
+    margin-right: 10px; 
+}
+/* 하단 좌측 개인정보,저작권 링크설정 */
+.samda a {
+    text-decoration: none;
+}
+/* 하단 좌측 개인정보,저작권 링크 그림자 설정 */
+.samda a:hover{
+    text-shadow: 0.5px 0.5px 0 gray;
+}
+/* 하단 좌측 주소,전화번호 링크설정 */
+.adress {
+    position: relative;
+    margin: 2px;
+}
+/* 하단 중앙 로고 설정 */
+.tape {
+    display: flex;
+    justify-content:center;
+    vertical-align: middle;
+    margin-top: 50px;   
+    margin-right: 130px;
+}
+/* 하단 중앙 로고 설정 */
+.tape div {
+    display: block;
+    font-size: 32px;
+    font-family: league spartan;
+    text-align: center;
+}
+/* 하단 중앙 로고 하단 설정 */
+.tape .animal-1 {
+    font-size : 8px;
+    line-height: 2px;
+    font-family: quicksand;
+    letter-spacing: 7px; 
+}
+/* 하단 우측 설정 */
+.youtube  {
+    display: flex;
+    margin-right: 170px;
+    margin-top:100px;
+}
+/* 하단 우측 아이콘이미지 크기 설정 */
+.youtube img {
+    width: 40px;
+    height: 40px;
+}
+/* 우측 하단 아이콘 링크 패딩 설정 */
+.youtube a {
+    padding: 5px;
+}

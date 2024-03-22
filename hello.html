@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="재현 캥거루쥐">
+    <meta property="og:description" content="재현이가 만든 캥거루쥐 홈페이지">
+    <meta property="og:image" content="https://raw.githubusercontent.com/wogus429/kangarurat/main/%EC%BA%A5%EA%B1%B0%EB%A3%A8%EC%A5%90%20%EC%9E%90%EB%A5%B4%EA%B8%B0%20%20(1).jpg">
+    <meta property="og:url" content="https://wogus429.github.io/kangarurat/hello.html">
+    <title>캥거루쥐</title>
+    <link rel="icon" href="./favicon-32x32.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="hello.css">
+    
+    
+</head>
+
+
+<body>
+    <nav>  
+        <div><a href="index.html"><span>POKET<BR></span><span>MOUSE<BR></span><span class="animal">ANIMAL</span></a></div>  
+        <ul class="is">
+            <li class="no1"><a href="hello.html">인사말</a></li>
+            <li class="no1"><a href="#">공지사항</a></li>
+            <li class="no1"><a href="media.html">미디어</a></li>
+            <li class="no1"><a href="#">굿즈샵</a></li>
+            <li class="no1"><a href="#">고객센터</a></li>
+        </ul>
+        <ul class="test">
+            <li><a href="#"><img src="./로그인.png" height="17px" alt=""><br>로그인</a></li>
+            <li><a href="#"><img src="./회원가입.png" height="17px" alt=""><br>회원가입</a></li>
+            <li><a href="#"><img src="./장바구니.png" height="17px" alt=""><br>장바구니</a></li>
+        </ul>
+    </nav>  
+    <main>
+      <div class="hello1"></div>
+      <div class="hello2" id="content"></div>
+      <div><img src="./캥거루쥐도장.png" id ="dojang" alt=""></div>
+    </main>
+    <footer>
+        <div class="info">
+            <div class="samda"><a href="#">개인정보 처리방침</a></div>
+            <div class="samda"><a href="#">저작권 보호정책</a></div>
+            <div class="adress">Tel: 064-757-2516</div>
+            <div class="adress">(FAX): 070-4521-4786</div>
+            <div class="adress">주소: 제주시 도령로54 한신오피스텔 815호</div>
+            <div class="adress">Copyright© 2024 캥거루쥐. All Rights Reserved.</div>
+        </div>
+        <div class="tape"><a href="#"><div>POKET<BR></div><div>MOUSE<BR></div><div class="animal-1">ANIMAL</div></a></div>
+        <div class="youtube">
+            <div><a href="https://www.youtube.com"><img src="./youtube.png" alt=""></a></div>
+            <div><a href="https://www.facebook.com"><img src="./face.png" alt=""></a></div>
+            <div><a href="https://www.instagram.com"><img src="./instar.png" alt=""></a></div>
+            <div><a href="https://www.naver.com"><img src="./post.png" alt=""></a></div>
+        </div>
+        
+    </footer>
+
+    <script>
+        // 텍스트 파일 읽어오기
+        fetch('content.txt')
+            .then(response => response.text())
+            .then(data => {
+                // 읽어온 내용을 div 태그에 삽입
+                document.getElementById('content').innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>

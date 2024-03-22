@@ -1,0 +1,35 @@
+/* 메인 내용 조정 */
+main {
+    margin-bottom: 53px;
+    margin-left: 170px;
+    margin-top: -30px;
+    display: flex;
+    align-items: center;
+}
+/* 메인 메뉴 좌측 대표사진 */
+.hello1 {
+    background : linear-gradient(to left,rgb(255, 255, 255,1), rgb(255, 255, 255,0)), url(./캥거루쥐.jpg);
+    background-size: cover;
+    height: 540px;
+    width: 540px;   
+}
+/* 메인메뉴 우측 인사말 */
+.hello2 {
+    height: 500px;
+    width: 1100px;
+    font-family: noto sans kr;
+    text-align: center;
+    font-size : 23px;
+    line-height: 50px;
+    position: relative;
+    top : 20px;
+
+}
+/* 메인메뉴 우측 인사말 하단 도장 */
+#dojang {
+width: 60px;
+position: relative  ;
+z-index: 1;
+right: 350px;
+top : 195px;
+}
